@@ -1,0 +1,13 @@
+<div class="w-100 d-flex justify-content-center text-primary">HTML principal</div>
+
+<div class="w-100 d-flex justify-content-center flex-column align-items-center">
+    Este es un encabezado para un componente hijo
+</div>
+
+<app-hijo
+    [elementos]="['Pera', 'Manzana']"
+    [titulo]="'Frutas'"
+    (clickElemento)="funcionClick($event)">
+</app-hijo>
+
+<button (click)="cambiarTitulo()">Cambiar titulo</button>
