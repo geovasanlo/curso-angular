@@ -12,6 +12,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modulos/material/material.module';
 import { MaterialEjemplosComponent } from './clase7/material-ejemplos/material-ejemplos.component';
 import { EjemploModalComponent } from './clase7/ejemplo-modal/ejemplo-modal.component';
+import { ConversorPipe } from './clase8/pipes/conversor.pipe';
+import { MiPropiaDirective } from './clase8/directivas/mi-propia.directive';
+import { RepetirDirective } from './clase8/directivas/repetir.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { EjemploModalComponent } from './clase7/ejemplo-modal/ejemplo-modal.comp
     HijoComponent,
     FormularioComponent,
     MaterialEjemplosComponent,
-    EjemploModalComponent
+    EjemploModalComponent,
+    ConversorPipe,
+    MiPropiaDirective,
+    RepetirDirective
   ],
   imports: [
     BrowserModule,

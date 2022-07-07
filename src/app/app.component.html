@@ -14,5 +14,30 @@
 
 <!--<app-formulario></app-formulario>-->
 
-<app-material-ejemplos></app-material-ejemplos>
+<!--<app-material-ejemplos></app-material-ejemplos>-->
 
+<!--{{texto | conversor : '?' : 'upper'}}
+
+{{'NuEVo TexTO' | conversor : '!' : 'lower'}}
+
+{{'normal' | conversor}}
+
+<button (click)="click()">Ver texto</button>
+
+<br><br><br><br>
+
+<div class="w-50 d-flex justify-content-center" appMiPropiaDirectiva>Mi div con directiva</div>
+
+<br><br>-->
+
+<span appMiPropiaDirectiva [calificacion]="calificacion" *ngIf="visible">{{calificacion}}</span><br>
+<!--<span appMiPropiaDirectiva [calificacion]="80">80</span><br>
+<span appMiPropiaDirectiva [calificacion]="60">60</span><br>
+<span appMiPropiaDirectiva [calificacion]="50">50</span><br>-->
+ <br><br>
+ <button (click)="subirCalificacion()">Subir calificacion</button>
+ <br><br>
+ <button (click)="visible = !visible">Visible</button>
+ <br><br><br><br>
+
+ <span *appRepetir="10">Hola!<br></span>
