@@ -15,6 +15,8 @@ import { EjemploModalComponent } from './clase7/ejemplo-modal/ejemplo-modal.comp
 import { ConversorPipe } from './clase8/pipes/conversor.pipe';
 import { MiPropiaDirective } from './clase8/directivas/mi-propia.directive';
 import { RepetirDirective } from './clase8/directivas/repetir.directive';
+import { PruebaServiciosComponent } from './clase9/componentes/prueba-servicios/prueba-servicios.component';
+import { PruebaDosServiciosComponent } from './clase9/componentes/prueba-dos-servicios/prueba-dos-servicios.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { RepetirDirective } from './clase8/directivas/repetir.directive';
     EjemploModalComponent,
     ConversorPipe,
     MiPropiaDirective,
-    RepetirDirective
+    RepetirDirective,
+    PruebaServiciosComponent,
+    PruebaDosServiciosComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +40,9 @@ import { RepetirDirective } from './clase8/directivas/repetir.directive';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialModule
+  ],
+  exports: [
+
   ],
   providers: [],
   bootstrap: [AppComponent]
