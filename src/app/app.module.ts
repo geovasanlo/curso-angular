@@ -17,6 +17,10 @@ import { MiPropiaDirective } from './clase8/directivas/mi-propia.directive';
 import { RepetirDirective } from './clase8/directivas/repetir.directive';
 import { PruebaServiciosComponent } from './clase9/componentes/prueba-servicios/prueba-servicios.component';
 import { PruebaDosServiciosComponent } from './clase9/componentes/prueba-dos-servicios/prueba-dos-servicios.component';
+import { PruebaObservablesComponent } from './clase10/prueba-observables/prueba-observables.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PruebaDosObservablesComponent } from './clase10/prueba-dos-observables/prueba-dos-observables.component';
+import { PruebaTresObservablesComponent } from './clase10/prueba-tres-observables/prueba-tres-observables.component';
 
 @NgModule({
   declarations: [
@@ -32,14 +36,18 @@ import { PruebaDosServiciosComponent } from './clase9/componentes/prueba-dos-ser
     MiPropiaDirective,
     RepetirDirective,
     PruebaServiciosComponent,
-    PruebaDosServiciosComponent
+    PruebaDosServiciosComponent,
+    PruebaObservablesComponent,
+    PruebaDosObservablesComponent,
+    PruebaTresObservablesComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   exports: [
 
