@@ -21,6 +21,10 @@ import { PruebaObservablesComponent } from './clase10/prueba-observables/prueba-
 import { HttpClientModule } from '@angular/common/http';
 import { PruebaDosObservablesComponent } from './clase10/prueba-dos-observables/prueba-dos-observables.component';
 import { PruebaTresObservablesComponent } from './clase10/prueba-tres-observables/prueba-tres-observables.component';
+import { EjemploUnoComponent } from './clase11/ejemplo-uno/ejemplo-uno.component';
+import { EjemploDosComponent } from './clase11/ejemplo-dos/ejemplo-dos.component';
+import { RoutingModule } from './routing.module';
+import { MiVistaModule } from './clase11/mi-vista/mi-vista.module';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,9 @@ import { PruebaTresObservablesComponent } from './clase10/prueba-tres-observable
     PruebaDosServiciosComponent,
     PruebaObservablesComponent,
     PruebaDosObservablesComponent,
-    PruebaTresObservablesComponent
+    PruebaTresObservablesComponent,
+    EjemploUnoComponent,
+    EjemploDosComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +53,9 @@ import { PruebaTresObservablesComponent } from './clase10/prueba-tres-observable
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    RoutingModule,
+    MiVistaModule
   ],
   exports: [
 

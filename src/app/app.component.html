@@ -47,7 +47,7 @@
 </ng-container>-->
 
 <!--<app-prueba-servicios></app-prueba-servicios>
-<app-prueba-dos-servicios></app-prueba-dos-servicios>-->
+<app-prueba-dos-servicios></app-prueba-dos-servicios>
 
 <div class="d-flex flex-column">
     <app-prueba-observables></app-prueba-observables>
@@ -55,5 +55,16 @@
     <app-prueba-dos-observables></app-prueba-dos-observables>
     <br><br><br>
     <app-prueba-tres-observables></app-prueba-tres-observables>
+</div>-->
+<div class="d-flex flex-column">
+    <h3>Esto es el APP Component</h3>
+    <div class="d-flex">
+        <button routerLink="/">Home</button>
+        <button routerLink="uno">Uno</button>
+        <button routerLink="dos">Dos</button>
+        <button (click)="irAMiVista()">Mi Vista</button>
+    </div>
+    <router-outlet></router-outlet>
 </div>
+
 

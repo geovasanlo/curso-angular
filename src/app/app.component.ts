@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { Fruta, HijoComponent } from './clase-5/hijo/hijo.component';
 import { ConversorPipe } from './clase8/pipes/conversor.pipe';
 
@@ -14,7 +15,9 @@ export class AppComponent implements AfterViewInit {
   public calificacion = 30;
   public visible = false;
 
-  constructor() {
+  constructor(
+    private router: Router
+  ) {
   }
 
   title = 'curso-angular';
@@ -38,4 +41,9 @@ export class AppComponent implements AfterViewInit {
   subirCalificacion() {
     this.calificacion = this.calificacion + 10;
   }
+
+  irAMiVista() {
+    this.router.navigate(['mi-vista']);
+  }
+
 }
