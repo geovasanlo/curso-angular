@@ -5,6 +5,7 @@ import { EjemploContenidoDosComponent } from './ejemplo-contenido-dos/ejemplo-co
 import { MiVistaComponent } from './mi-vista.component';
 import { MiVistaRoutingModule } from './mi-vista-routing.module';
 import { EjemploContenidoUnoModule } from './ejemplo-contenido-uno/ejemplo-contenido-uno.module';
+import { CompartidoModule } from 'src/app/compartido/compartido.module';
 
 
 
@@ -17,7 +18,8 @@ import { EjemploContenidoUnoModule } from './ejemplo-contenido-uno/ejemplo-conte
   imports: [
     CommonModule,
     MiVistaRoutingModule,
-    EjemploContenidoUnoModule
+    EjemploContenidoUnoModule,
+    CompartidoModule
   ]
 })
 export class MiVistaModule { }

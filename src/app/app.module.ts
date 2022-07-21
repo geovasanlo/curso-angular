@@ -25,6 +25,8 @@ import { EjemploUnoComponent } from './clase11/ejemplo-uno/ejemplo-uno.component
 import { EjemploDosComponent } from './clase11/ejemplo-dos/ejemplo-dos.component';
 import { RoutingModule } from './routing.module';
 import { MiVistaModule } from './clase11/mi-vista/mi-vista.module';
+import { Clase12Module } from './clase12/clase12.module';
+import { CompartidoModule } from './compartido/compartido.module';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,8 @@ import { MiVistaModule } from './clase11/mi-vista/mi-vista.module';
     MaterialModule,
     HttpClientModule,
     RoutingModule,
-    MiVistaModule
+    MiVistaModule,
+    CompartidoModule
   ],
   exports: [
 
