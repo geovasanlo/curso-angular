@@ -57,7 +57,6 @@ import { CompartidoModule } from './compartido/compartido.module';
     MaterialModule,
     HttpClientModule,
     RoutingModule,
-    MiVistaModule,
     CompartidoModule
   ],
   exports: [

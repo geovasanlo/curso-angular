@@ -4,11 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { EjemploUnoComponent } from './clase11/ejemplo-uno/ejemplo-uno.component';
 import { EjemploDosComponent } from './clase11/ejemplo-dos/ejemplo-dos.component';
 import { AppComponent } from './app.component';
+import { MiGuardaGuard } from './clase13/guardas/mi-guarda.guard';
 
 const rutas: Routes = [
   { path: 'uno', component: EjemploUnoComponent },
   { path: 'dos', component: EjemploDosComponent },
-  { path: 'mi-vista', loadChildren: () => import('./clase11/mi-vista/mi-vista.module').then(m => m.MiVistaModule) },
+  { path: 'mi-vista',
+    loadChildren: () => import('./clase11/mi-vista/mi-vista.module').then(m => m.MiVistaModule),
+    canActivate: [MiGuardaGuard]
+  },
   { path: '', redirectTo: '', pathMatch: 'full' }
 ]
 
