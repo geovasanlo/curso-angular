@@ -27,6 +27,7 @@ import { RoutingModule } from './routing.module';
 import { MiVistaModule } from './clase11/mi-vista/mi-vista.module';
 import { Clase12Module } from './clase12/clase12.module';
 import { CompartidoModule } from './compartido/compartido.module';
+import { ListaPersonajesComponent } from './clase14/componentes/lista-personajes/lista-personajes.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { CompartidoModule } from './compartido/compartido.module';
     PruebaDosObservablesComponent,
     PruebaTresObservablesComponent,
     EjemploUnoComponent,
-    EjemploDosComponent
+    EjemploDosComponent,
+    ListaPersonajesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,22 @@
+<h3>Personajes:</h3>
+<ul>
+    <li *ngFor="let personaje of personajes">
+        {{personaje.nombre}} aparece en la película: {{personaje.pelicula}}
+    </li>
+</ul>
+
+<button (click)="cargarPersonajes()">
+    Personajes
+</button>
+<button (click)="cargarPersonaje('1')">
+    Personaje
+</button>
+<button (click)="guardarPersonaje()">
+    Guardar
+</button>
+<button (click)="editarPersonaje()">
+    Editar
+</button>
+<button (click)="eliminarPersonaje()">
+    Delete
+</button>
