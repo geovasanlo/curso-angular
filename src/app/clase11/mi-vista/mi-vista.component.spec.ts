@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { MiVistaComponent } from './mi-vista.component';
 
@@ -8,7 +9,8 @@ describe('MiVistaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MiVistaComponent ]
+      declarations: [ MiVistaComponent ],
+      imports: [ RouterTestingModule ]
     })
     .compileComponents();
 

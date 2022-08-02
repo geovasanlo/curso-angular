@@ -1,4 +1,6 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MockapiService } from '../../servicios/mockapi.service';
 
 import { ListaPersonajesComponent } from './lista-personajes.component';
 
@@ -8,7 +10,13 @@ describe('ListaPersonajesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListaPersonajesComponent ]
+      declarations: [ ListaPersonajesComponent ],
+      imports: [
+        HttpClientTestingModule
+      ],
+      providers: [
+        MockapiService
+      ]
     })
     .compileComponents();
 

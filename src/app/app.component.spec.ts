@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -7,6 +8,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      imports: [RouterTestingModule]
     }).compileComponents();
   });
 
@@ -27,5 +29,18 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain('curso-angular app is running!');
+  });
+
+  it('background should be white', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(
+      window.getComputedStyle(
+        compiled.querySelector('.content') as Element
+      )?.getPropertyValue('background-color')
+    ).toBe(
+      'rgb(255, 0, 0)'
+    );
   });
 });

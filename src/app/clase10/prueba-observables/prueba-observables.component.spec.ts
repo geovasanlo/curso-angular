@@ -1,4 +1,6 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { PruebaObservablesService } from '../prueba-observables.service';
 
 import { PruebaObservablesComponent } from './prueba-observables.component';
 
@@ -8,7 +10,13 @@ describe('PruebaObservablesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PruebaObservablesComponent ]
+      declarations: [ PruebaObservablesComponent ],
+      imports: [
+        HttpClientTestingModule
+      ],
+      providers: [
+        PruebaObservablesService
+      ]
     })
     .compileComponents();
 
